@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage = 'https://github.com/lostisland/faraday-em_synchrony'
   spec.license = 'MIT'
 
-  spec.required_ruby_version = Gem::Requirement.new('>= 2.4.0')
+  spec.required_ruby_version = Gem::Requirement.new('>= 2.6.0')
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/lostisland/faraday-em_synchrony'
@@ -22,11 +22,10 @@ Gem::Specification.new do |spec|
   spec.files = Dir.glob('lib/**/*') + %w[README.md LICENSE.md]
   spec.require_paths = ['lib']
 
-  # TODO: make these normal dependencies when releasing v2.0 together with Faraday v2.0
-  spec.add_development_dependency 'em-http-request', '>= 1.1'
-  spec.add_development_dependency 'em-synchrony', '>= 1.0.3'
-  spec.add_development_dependency 'faraday', '~> 1.0'
-  spec.add_development_dependency 'faraday-em_http', '~> 1.0'
+  spec.add_runtime_dependency 'em-http-request', '>= 1.1'
+  spec.add_runtime_dependency 'em-synchrony', '>= 1.0.3'
+  spec.add_runtime_dependency 'faraday', '~> 2.0'
+  spec.add_runtime_dependency 'faraday-em_http', '~> 2.0'
 
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'rake', '~> 13.0'

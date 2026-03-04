@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'faraday'
 require 'faraday/em_http'
 require_relative 'adapter/em_synchrony'
 require_relative 'em_synchrony/version'
